@@ -112,3 +112,12 @@ if (valorCusto < 0 || valorVenda < 0){
 }
 
 //Salário líquido a partir do Bruto
+let salarioBruto;
+let salarioLiquido = 0;
+
+if(salarioBruto<=1556.94){
+    salarioLiquido = salarioBruto*0,92
+    console.log(salarioLiquido);
+} else if(salarioBruto>1556.94 && salarioBruto<=1903.98){
+    salarioLiquido = salarioBruto*0.91
+} else if(salarioBruto>1903.98)
