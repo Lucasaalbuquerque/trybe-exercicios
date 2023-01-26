@@ -42,12 +42,32 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 //Exercício Bonus
 
-for(let index1 = 1; index1 < numbers.length; index1 +=1){
-    for(let index2 = 0; index2 < index1; index2+=1){
-        if(numbers[index2] > numbers[index1]){
-            let posicao = numbers[index1]
-            numbers[index1] = numbers[index2]
-            numbers[index2] = posicao
-        }
-    } 
-} console.log(numbers)
+//crescente
+// for(let index1 = 1; index1 < numbers.length; index1 +=1){
+//     for(let index2 = 0; index2 < index1; index2+=1){
+//         if(numbers[index2] > numbers[index1]){
+//             let posicao = numbers[index1]
+//             numbers[index1] = numbers[index2]
+//             numbers[index2] = posicao
+//         }
+//     } 
+// } console.log(numbers)
+
+//decrescente
+// for(let index1 = 1; index1 < numbers.length; index1 +=1){
+//     for(let index2 = 0; index2 < index1; index2+=1){
+//         if(numbers[index2] < numbers[index1]){
+//             let posicao = numbers[index1]
+//             numbers[index1] = numbers[index2]
+//             numbers[index2] = posicao
+//         }
+//     } 
+// } console.log(numbers)
+
+let newNumbers = [];
+
+for(let index = 1; index<numbers.length; index +=1){
+    newNumbers.push(numbers[index]*numbers[index-1])
+}
+newNumbers.push(numbers[numbers.length -1]*2)
+console.log(newNumbers)
