@@ -60,24 +60,36 @@ let simbolo = '*'
 
 // triangulo de asterisco
 
-// for(let index=1; index<=n; index+=1){
-//     linha = linha + simbolo;
-//     console.log(linha)
-// }
+for(let index=1; index<=n; index+=1){
+    linha = linha + simbolo;
+    console.log(linha)
+}
 
 // triangulo de asteriscos invertido
 
-let contraPosicao = n - 1;
+// let contraPosicao = n - 1;
 
-for(let i=0; i<n; i+=1){
-    for(let j=0; j<n; j+=1){
-        if(j<contraPosicao){
-            linha = linha +' '
-        } else{
-           linha = linha + simbolo 
-        }
-    }
-    console.log(linha);
-    linha = '';
-    contraPosicao -=1
-}
+// for(let i=0; i<n; i+=1){
+//     for(let j=0; j<n; j+=1){
+//         if(j<contraPosicao){
+//             linha = linha +' '
+//         } else{
+//            linha = linha + simbolo 
+//         }
+//     }
+//     console.log(linha);
+//     linha = '';
+//     contraPosicao -=1
+// }
+
+
+const seleciona = ;
+const selected = document.querySelectorAll('.selected');
+if (event.target.classList === 'selected') {
+    event.target.classList.remove('selected');
+  } else {
+    event.target.classList.add('selected');
+  }
+  if (selected !== null) {
+    selected.classList.remove('selected');
+  }
